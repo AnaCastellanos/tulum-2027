@@ -1,0 +1,31 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tulum 2027 ✦ Raves</title><meta property="og:title" content="Tulum 2027 ✦ Raves"><meta property="og:description" content="Zamna, 1 al 11 de enero">
+<style>
+body{margin:0;min-height:100vh;background:radial-gradient(circle at 30% 0,#5b2a86,#1a0b2e 60%,#0c0616) fixed;font-family:-apple-system,Helvetica,sans-serif;color:#fff}
+main{max-width:640px;margin:0 auto;padding:36px 14px}
+h1{font-size:clamp(30px,9vw,42px);margin:0;letter-spacing:6px;font-weight:800}.sub{color:#c9a7f0;letter-spacing:3px;font-size:14px;margin:6px 0 24px}
+.g{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}.h{text-align:center;color:#c9a7f0;font-size:11px;letter-spacing:1px;padding-bottom:4px}
+.c{min-height:96px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(201,167,240,.18);padding:6px;box-sizing:border-box;overflow:hidden}
+.off{opacity:.15}.num{font-size:14px;color:#c9a7f0;font-weight:600}
+.ev{background:linear-gradient(160deg,rgba(155,89,230,.55),rgba(80,30,130,.5));border-color:#c9a7f0}.ev .num{color:#fff}
+.n{font-size:12.5px;font-weight:700;margin-top:6px;line-height:1.15;word-break:break-word}.t{font-size:11px;color:#e6d6fa;margin-top:3px}
+.tag{display:inline-block;font-size:8.5px;border:1px solid #f0c36b;color:#f0c36b;border-radius:99px;padding:1px 5px;margin-top:4px}
+.f{margin-top:24px;color:#a98cc8;font-size:13px;text-align:center;letter-spacing:1px}
+</style></head><body><main>
+<h1>TULUM 2027</h1><div class="sub">ZAMNA · 1 AL 11 DE ENERO</div>
+<div class="g" id="g"></div><div class="f">nos vemos en la pista ✦</div></main>
+<script>
+// Para actualizar: edita esta lista. dia de enero 2027, nombre, hora, lugar, etiqueta
+const EVENTS=[
+ {dia:6,nombre:"Black Coffee",hora:"22:00",tag:""},
+ {dia:7,nombre:"Solomun",hora:"23:00",tag:""},
+ {dia:8,nombre:"Adriatique",hora:"22:00",tag:"por comprar"},
+ {dia:9,nombre:"Day Zero",hora:"19:00",tag:""},
+];
+const g=document.getElementById('g');
+g.innerHTML=["LUN","MAR","MIÉ","JUE","VIE","SÁB","DOM"].map(x=>`<div class="h">${x}</div>`).join('');
+for(let d=new Date(2026,11,28);d<=new Date(2027,0,17);d.setDate(d.getDate()+1)){
+ const on=d.getFullYear()==2027&&d.getDate()<=11, e=on&&EVENTS.find(x=>x.dia==d.getDate());
+ g.insertAdjacentHTML('beforeend',`<div class="c${on?'':' off'}${e?' ev':''}"><div class="num">${d.getDate()}</div>${e?`<div class="n">${e.nombre}</div><div class="t">${e.hora}</div>${e.tag?`<div class="tag">${e.tag}</div>`:''}`:''}</div>`);
+}
+</script></body></html>
