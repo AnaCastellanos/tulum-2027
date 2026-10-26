@@ -27,10 +27,10 @@ h1{font-size:clamp(30px,9vw,42px);margin:0;letter-spacing:6px;font-weight:800}.s
 <script>
 // Para actualizar: edita esta lista. dia, nombre, hora, tag; opcionales: puertas, lugar, maps (link Google Maps), lineup, boletos (link). Vacío = "por confirmar"
 const EVENTS=[
- {dia:6,nombre:"Black Coffee",hora:"22:00",tag:""},
- {dia:7,nombre:"Solomun",hora:"23:00",tag:""},
- {dia:8,nombre:"Adriatique",hora:"22:00",tag:"por comprar"},
- {dia:9,nombre:"Day Zero",hora:"19:00",tag:""},
+ {dia:6,nombre:"Black Coffee",hora:"22:00",tag:"",puertas:"22:00 (cierra 08:00)",lugar:"Zamna Cenote · Aldea Tulum (Km 200, Carr. 307)",maps:"https://www.google.com/maps/search/?api=1&query=5FPC%2BWW%20Tulum%2C%20Quintana%20Roo%2C%20Mexico",lineup:"Black Coffee + support por anunciar",boletos:"https://www.ticketfairy.com/event/black-coffee-tulum"},
+ {dia:7,nombre:"Solomun",hora:"23:00",tag:"",puertas:"23:00 (cierra 08:00)",lugar:"Tehmplo Tulum (Zona Hotelera)",maps:"https://www.google.com/maps/search/?api=1&query=5G9V%2BQP%20Tulum%2C%20Quintana%20Roo",lineup:"Solomun + support por anunciar"},
+ {dia:8,nombre:"Adriatique",hora:"22:00",tag:"por comprar",puertas:"22:00 (cierra 08:00)",lugar:"Zamna Cenote · Aldea Tulum (Km 200, Carr. 307)",maps:"https://www.google.com/maps/search/?api=1&query=5FPC%2BWW%20Tulum%2C%20Quintana%20Roo%2C%20Mexico",lineup:"Adriatique (X Tulum: FOREVER), Mind Against, Kotiēr, SAMA, WhoMadeWho (hybrid DJ set)",boletos:"https://www.ticketfairy.com/event/adriatique-present-x-tulum"},
+ {dia:9,nombre:"Day Zero",hora:"19:00",tag:"",puertas:"18:00 (cierra 12:00)",lineup:"&ME, Damian Lazarus, Chloé Caillet, Culoe De Song, LP Giobbi, Mita Gami, RPR Soundsystem, Satori, Tiga, Victor Calderone, Vintage Culture, Jane Fitz, Mira, Robag Wruhme y más (30 artistas, 3 escenarios)"},
 ];
 
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
